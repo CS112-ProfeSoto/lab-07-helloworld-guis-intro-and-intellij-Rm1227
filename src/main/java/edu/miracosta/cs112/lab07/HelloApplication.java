@@ -7,7 +7,7 @@ import javafx.scene.layout.VBox;        //class for layout pane, organized top-t
 import javafx.scene.control.Label;      //class for label component
 import javafx.scene.control.Button;     //class for button component
 import javafx.event.EventHandler;
-import javafx.scene.control.TextField;
+import javafx.scene.control.TextField; //textfield addon
 //interface for handling events
 import javafx.event.ActionEvent;        //class for type of event for action (like button or key pressed)
 
@@ -29,7 +29,7 @@ public class HelloApplication extends Application implements EventHandler<Action
         //SETUP COMPONENTS
         message = new Label("Hi, User!");
         textField = new TextField();
-        textField.setPromptText("Enter your name");
+        textField.setPromptText("Enter your name"); //textfield name enter segment
         button = new Button("Click me"); //or can set text using setText method separately
         button.setOnAction(this); //who the event handler is (which object/class should handle the event)
 
